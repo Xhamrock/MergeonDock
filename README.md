@@ -129,7 +129,7 @@ MergeonDock is developed primarily for **Windows**.
 - Fully supported. The installer includes all necessary dependencies.
 
 ### **Linux**
-⚠ **Linux compatibility is currently untested.**  
+⚠ **Linux compatibility is currently untested. Alesterlin will complete this part**  
 MergeonDock is designed for Windows, and running it on Linux may require significant modifications.  
 Potential issues include:
 - **AutoDock Vina & AutoDock 4.2 execution** (command differences & Python 2 environment)
