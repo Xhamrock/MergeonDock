@@ -1,5 +1,5 @@
 
-![Image](https://github.com/user-attachments/assets/80c3952a-0abe-4cf9-ae61-cb6a24294b10)
+![Image](https://github.com/user-attachments/assets/aeb3e23b-f742-4ebf-a77c-0d6ee43de334)
 # MergeonDock - Open-Source Molecular Docking & Analysis Tool  
 MergeonDock is an open-source tool for molecular docking and interaction analysis, integrating AutoDock, RDKit, PyMOL, and Open Babel to streamline docking workflows.
 
