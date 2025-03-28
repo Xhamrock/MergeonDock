@@ -59,20 +59,49 @@
 	  transform: translateY(-2px);
       box-shadow: 0 8px 15px rgba(0,0,0,0.2);
     }
-    .screenshot img {
-	  width: 100%;
-      max-width: 600px;
-	  min-width: 300px; 
-	  height: auto;
-	  border-radius: 8px;
-    }
+    
+    
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #777;
       margin-top: 4rem;
     }
-    @media (max-width: 768px) {
+	
+	}
+	.screenshot-container {
+	  flex: 0 0 40%; 
+	  display: flex;
+	  justify-content: center;
+	  margin-top: 0;
+	}
+	.screenshot-container img {
+	  max-width: 100%;
+	  border-radius: 8px;
+	}
+	.video-container {
+	  display: block;
+	  margin-top: 3rem;
+	  position: relative;
+	  overflow: hidden;
+	  max-width: 800px;
+	  width: 100%;
+	  aspect-ratio: 16 / 9; /* 使用 aspect-ratio 取代 padding-bottom */
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.video-container iframe {
+	  width: 100%;
+	  height: 100%;
+	}
+
+	h2 {
+	  color: #007acc;
+	  margin-top: 1rem;
+	}
+	
+	@media (max-width: 768px) {
 	  header img {
 		max-width: 300px; 
 	  }
@@ -110,6 +139,12 @@
 		max-width: 350px;
 	  }
 	}
+	@media (min-width: 1440px) {
+	  .video-container {
+		max-width: 1200px; 
+	  }
+	}
+
   </style>
 </head>
 <body>
@@ -131,16 +166,31 @@
         <li>Receptor & Ligand Processing: Automatically prepares .pdb files for docking.</li>
         <li>Advanced Settings: Customize receptor and ligand preparation settings based on AutoDock 4.2 options.</li>
         <li>Mini Open Babel Converter: A built-in tool for converting molecular file formats between .mol, .pdb, and .pdbqt using Open Babel, seamlessly integrated into the GUI.</li>
-	<li>Interaction Analysis: Allows users to analyze docking results with reference ligands.</li>
-	<li>Multi-Format Support: Supports .pdb, .pdbqt, and .sdf file formats.</li>
+		<li>Interaction Analysis: Allows users to analyze docking results with reference ligands.</li>
+		<li>Multi-Format Support: Supports .pdb, .pdbqt, and .sdf file formats.</li>
       </ul>
       <a class="button" href="https://github.com/Xhamrock/MergeonDock">View on GitHub</a>
       <a class="button" href="https://github.com/Xhamrock/MergeonDock/releases/download/v0.8.0-beta/MergeonDock_0_8_0_beta_setup.exe">Download Now (MergeonDock 0.8.0 beta)</a>
     </div>
-    <div class="screenshot">
-      <img src="https://github.com/user-attachments/assets/07ef0e5e-f9e5-4df3-a1b4-5bfb47c27e3d" alt="MergeonDock Screenshot">
-    </div>
+	
+    <div class="screenshot-container">
+		<img src="https://github.com/user-attachments/assets/07ef0e5e-f9e5-4df3-a1b4-5bfb47c27e3d" alt="MergeonDock Screenshot">
+	</div>
   </main>
+	  
+  <hr style="margin: 40px 0; border: none; border-top: 1px solid #ccc;">
+  
+  <div class="video-container">
+	<iframe src="https://www.youtube.com/embed/gcyPQjjamXQ?si=lYER2mNZUR0vVs02" 
+	title="MergeonDock Brief Demonstration" frameborder="0" 
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+	referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		
+  </div>  
+	  
+	  
+
+   
 
   <footer>
     <a href="https://github.com/Xhamrock" target="_blank"> <img src="https://github.com/user-attachments/assets/eb616857-ab8d-481b-a0f5-4203a83d758b" alt="Xhamrock Studio" style="height:30px;"> </a>
@@ -148,4 +198,3 @@
   </footer>
 </body>
 </html>
-
