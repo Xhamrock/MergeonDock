@@ -7,71 +7,107 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: #f9fafb;
       margin: 0;
       padding: 0;
       color: #333;
     }
     header {
-      background: #1e1e1e;
-      color: #fff;
-      padding: 1rem;
+      background: #fff;
+      padding: 2rem 0;
       text-align: center;
     }
+    header img {
+      max-width: 500px;
+    }
     main {
-      max-width: 960px;
-      margin: 2rem auto;
+      max-width: 1600px;
+      margin: 3rem auto;
       background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+    }
+    .text-content {
+      flex: 1;
+      margin-right: 2rem;
     }
     h1, h2 {
-      color: #1e1e1e;
+      color: #007acc;
+    }
+    p {
+      line-height: 1.6;
+    }
+	
+    ul {
+      padding-left: 20px;
     }
     a.button {
       display: inline-block;
+      margin-right: 10px;
       padding: 0.75rem 1.5rem;
       background: #007acc;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
-      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #005f99;
+	  transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .screenshot img {
+	  width: 100%;
+      max-width: 600px;
+	  min-width: 300px; 
+	  height: auto;
+	  border-radius: 8px;
     }
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #777;
-      margin-top: 3rem;
+      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>MergeonDock</h1>
-    <p>Open-Source Molecular Docking & Analysis Tool</p>
+    <img src="https://github.com/user-attachments/assets/aeb3e23b-f742-4ebf-a77c-0d6ee43de334" alt="MergeonDock Logo">
+    <p>Your Open-Source Molecular Docking & Analysis Tool</p>
   </header>
+
   <main>
-    <h2>What is MergeonDock?</h2>
-    <p>
-      MergeonDock is an open-source graphical tool designed for molecular docking and interaction analysis.
-      It integrates AutoDock, RDKit, PyMOL, and Open Babel to help researchers streamline their docking workflow
-      without requiring command-line expertise.
-    </p>
-
-    <h2>Key Features</h2>
-    <ul>
-      <li>AutoDock Vina & AutoDock 4.2 integration</li>
-      <li>Built-in Open Babel file converter</li>
-      <li>Receptor and ligand preparation with GUI</li>
-      <li>Visualization powered by PyMOL</li>
-      <li>Compatible with .pdb, .pdbqt, and .sdf formats</li>
-    </ul>
-
-    <a class="button" href="https://github.com/Xhamrock/MergeonDock">View on GitHub</a>
+    <div class="text-content">
+      <h2>About MergeonDock</h2>
+      <p>
+        MergeonDock is an intuitive, open-source software that simplifies molecular docking and interaction analysis. By integrating AutoDock, RDKit, PyMOL, and Open Babel, it offers a streamlined, GUI-driven docking workflow accessible to both beginners and experienced researchers.
+      </p>
+      <h2>Features</h2>
+      <ul>
+        <li>Graphical User Interface (GUI): Provides an intuitive interface for docking workflow visualization.</li>
+        <li>AutoDock Vina Integration: Uses AutoDock Vina 1.2.5 as the core docking engine.</li>
+        <li>Receptor & Ligand Processing: Automatically prepares .pdb files for docking.</li>
+        <li>Advanced Settings: Customize receptor and ligand preparation settings based on AutoDock 4.2 options.</li>
+        <li>Mini Open Babel Converter: A built-in tool for converting molecular file formats between .mol, .pdb, and .pdbqt using Open Babel, seamlessly integrated into the GUI.</li>
+		<li>Interaction Analysis: Allows users to analyze docking results with reference ligands.</li>
+		<li>Multi-Format Support: Supports .pdb, .pdbqt, and .sdf file formats.</li>
+      </ul>
+      <a class="button" href="https://github.com/Xhamrock/MergeonDock">View on GitHub</a>
+      <a class="button" href="https://github.com/Xhamrock/MergeonDock/releases/download/v0.8.0-beta/MergeonDock_0_8_0_beta_setup.exe">Download Now (MergeonDock 0.8.0 beta)</a>
+    </div>
+    <div class="screenshot">
+      <img src="https://github.com/user-attachments/assets/07ef0e5e-f9e5-4df3-a1b4-5bfb47c27e3d" alt="MergeonDock Screenshot">
+    </div>
   </main>
+
   <footer>
+    <a href="https://github.com/Xhamrock" target="_blank"> <img src="https://github.com/user-attachments/assets/eb616857-ab8d-481b-a0f5-4203a83d758b" alt="Xhamrock Studio" style="height:30px;"> </a>
     Powered by Xhamrock Studio • MIT License
   </footer>
 </body>
 </html>
+
