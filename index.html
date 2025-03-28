@@ -72,6 +72,44 @@
       color: #777;
       margin-top: 4rem;
     }
+    @media (max-width: 768px) {
+	  header img {
+		max-width: 300px; 
+	  }
+
+	  main {
+		flex-direction: column; 
+		padding: 2rem;
+	  }
+
+	  .text-content {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	  }
+
+	  .screenshot img {
+		max-width: 100%; 
+	  }
+
+	  a.button {
+		display: block; 
+		margin-bottom: 10px;
+		text-align: center;
+	  }
+	}
+	@media (min-width: 768px) and (max-width: 1024px) {
+	  header img {
+		max-width: 400px;
+	  }
+
+	  main {
+		padding: 2.5rem;
+	  }
+
+	  .screenshot img {
+		max-width: 350px;
+	  }
+	}
   </style>
 </head>
 <body>
